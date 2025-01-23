@@ -1,0 +1,12 @@
+- name: Nginx Playbook
+  hosts: web
+  become: yes # -b
+  tasks:
+  - name: Installing nginx
+    ansible.built.package:
+      name: nginx
+      state: present
+  - name: Start the nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
