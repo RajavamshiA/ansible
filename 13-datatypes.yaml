@@ -15,6 +15,6 @@
       cloud: aws
       containerization: docker
   tasks:
-  - name:Print Information
+  - name: Print Information
     ansible.builtin.debug:
       msg: "Hello I'm Learning {{ course_name }}, duration:{{ duration }}hrs, topics are: {{ topics }} , is it live?: {{ live }}, tools covered are: {{ tools }}"
