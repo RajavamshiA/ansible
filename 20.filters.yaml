@@ -4,4 +4,4 @@
   tasks:
   - name: Handling undefined vaiable
     ansible.builtin.debug:
-      msg: "Hello {{ person }} | default('Vamshi')"
+      msg: "Hello {{ person | default('Vamshi')}}"
