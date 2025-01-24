@@ -5,3 +5,11 @@
   - name: Execute ls command
    #ansible.builtin.command: ls -ltr > /tmp/output.txt
     ansible.builtin.shell: ls -ltr > /tmp/output.txt
+
+  - name: Execute ls command in command Module
+    ansible.builtin.shell: ls -ltr 
+    register: command_result
+
+  - name: Print the Output
+    ansible.builtin.debug:
+      msg: "{{ command_result }}"
