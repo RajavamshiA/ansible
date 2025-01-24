@@ -1,0 +1,12 @@
+- name: Installing packages
+  hosts: web
+  become: yes # Run the command as root
+  tasks: 
+  - name: Install Packages
+    ansible.builtin.package:
+      name: {{}}
+      state: installed
+    loop:
+    - git
+    - gcc
+    - zip
