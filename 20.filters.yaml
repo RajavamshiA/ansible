@@ -1,0 +1,7 @@
+- name: Filters
+  hosts: local
+  connection: local
+  tasks:
+  - name: Handling undefined vaiable
+    ansible.builtin.debug:
+      msg: "Hello {{ person }} | default('Vamshi')"
