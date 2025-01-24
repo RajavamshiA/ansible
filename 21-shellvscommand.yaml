@@ -1,0 +1,6 @@
+- name: Shell VS Command
+  hosts: local
+  connection: local
+  tasks:
+  - name: Execute ls command
+    ansible.builtin.command: ls -ltr
