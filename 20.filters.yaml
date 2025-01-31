@@ -1,6 +1,6 @@
 - name: Filters
   hosts: web
-  connection: local
+  connection: web
   tasks:
   - name: Handling undefined vaiable
     ansible.builtin.debug:
