@@ -1,5 +1,5 @@
 - name: Filters
-  hosts: local
+  hosts: web
   connection: local
   tasks:
   - name: Handling undefined vaiable
