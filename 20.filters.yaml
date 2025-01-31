@@ -31,6 +31,8 @@
       msg: "Course Information:{{ course | items2dict }}"
     
   - name: Convert upper to lower
+    tags: 
+    - uppertolower
     vars:
       name: "Raja Vamshi"   
     ansible.builtin.debug:
