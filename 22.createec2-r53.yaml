@@ -52,7 +52,7 @@
 
 - name: create ec2 and r53 records
   connection: local
-  hosts: web
+  hosts: local
   vars:
     subnet_id: subnet-0c9ef872d9e949944
     sg_id: sg-0d86a0193f52cf215
