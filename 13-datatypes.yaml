@@ -6,7 +6,7 @@
     duration: 120
     topics: 
     - linux
-    - shell
+    - shell     
     - ansible
     - AWS
     live: true
