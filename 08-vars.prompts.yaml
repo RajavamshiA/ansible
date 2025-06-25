@@ -9,7 +9,7 @@
     prompt: Please enter duration of the course
     private: false
   - name: TRAINER
-    prompt: Please enter trainer name
+    prompt: Please enter trainer name       
     private: false
   tasks:
   - name: print course information
