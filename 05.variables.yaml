@@ -5,7 +5,7 @@
     COURSE: "Devops with AWS"
     DURATION: "120 hrs"
     TRAINER: "Siva"
-
+        
   tasks:
   - name: print the varialbles
     ansible.builtin.debug:
