@@ -8,3 +8,6 @@ hostnames:
   - private-ip-address #fetch
 compose:
   ansible_host: private_ip_address #execute
+
+
+  
