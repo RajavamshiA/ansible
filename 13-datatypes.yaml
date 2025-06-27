@@ -12,7 +12,7 @@
     live: true
     tools:
       ci: jenkins
-      cloud: aws
+      cloud: aws      
       containerization: docker
   tasks:
   - name: Print Information
