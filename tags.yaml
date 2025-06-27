@@ -1,37 +1,18 @@
-- name: Install and configure NGINX on RHEL-based systems
+---
+- name: Install and start NGINX on RHEL
   hosts: webservers
   become: yes
 
   tasks:
-    - name: Install EPEL repository (required for nginx)
-      yum:
-        name: epel-release
-        state: present
-      tags: epel
-
     - name: Install NGINX
       yum:
         name: nginx
         state: present
       tags: install
 
-    - name: Enable NGINX to start on boot
-      systemd:
-        name: nginx
-        enabled: yes
-      tags: enable
-
     - name: Start NGINX
       systemd:
         name: nginx
         state: started
+        enabled: yes
       tags: start
-
-    - name: Open port 80 in firewall
-      firewalld:
-        port: 80/tcp
-        permanent: yes
-        state: enabled
-        immediate: yes
-      when: ansible_facts['os_family'] == "RedHat"
-      tags: firewall
