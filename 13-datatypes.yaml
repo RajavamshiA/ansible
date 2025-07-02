@@ -8,7 +8,7 @@
     - linux
     - shell         
     - ansible
-    - AWS
+    - AWS   
     live: true
     tools:
       ci: jenkins
