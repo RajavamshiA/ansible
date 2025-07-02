@@ -7,7 +7,7 @@
     GREET: "PLAY"
   vars_prompt:
   - name: GREET
-    prompt: Enter the value
+    prompt: Enter the value     
     private: false        
   tasks:
   - name: print the varialbles
